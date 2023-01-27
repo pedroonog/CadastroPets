@@ -1,0 +1,29 @@
+CREATE DATABASE petshop;
+USE petshop;
+
+CREATE TABLE pets (
+	codigo			 INT(11)	AUTO_INCREMENT PRIMARY KEY,
+	nome			 VARCHAR(30),
+	sexo			 CHAR(1),
+	idade			 INT(2),
+	tipo			 CHAR(1),
+	peso			 FLOAT(7,2),
+	vacinado		 BOOLEAN,
+	codigoDono		 INT(11),
+	ultimaVisita	 DATE,
+	medico			 VARCHAR(30),
+	obs			 	 TEXT,
+	foto			 VARCHAR(100)
+);
+
+INSERT INTO PETS (nome, sexo, idade, tipo, peso, vacinado, codigoDono, ultimaVisita, medico, obs, foto) VALUES
+    ("Neguinho", "M", 8, "G", 3.30, 1, 17, "2018-06-17", "Dra Mirian", "", "Neguinho1.png") ;
+	
+INSERT INTO PETS (nome, sexo, idade, tipo, peso, vacinado, codigoDono, ultimaVisita, medico, obs, foto) VALUES
+    ("Nina", "F",3, "G", 3.80, 0, 17, NULL, "", "", "Nina.png") ;	
+	
+INSERT INTO PETS (nome, sexo, idade, tipo, peso, vacinado, codigoDono, ultimaVisita, medico, obs, foto) VALUES
+    ("Samsão", "M",5, "P", 1.75, 0, 12, NULL, "", "", "samsao.jpg") ;		
+	
+INSERT INTO PETS (nome, sexo, idade, tipo, peso, vacinado, codigoDono, ultimaVisita, medico, obs, foto) VALUES
+    ("Ollie", "F", 8, "R", 2.80, 0, 8, NULL, "", "", "ollie.jpg") ;		
